@@ -3,16 +3,16 @@ layout: main
 ---
 
 {% for post in paginator.posts %}
-  <div class="chapter">
-    <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+  <div class="Xu Weichi 的个人网页">
+    <a href="{{xuweichi.github.io | prepend: site.baseurl}}">
+      {% if xuweichi.img %}
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append: xuweichi.img }} alt="{{post.title}}">
       {% endif %}
     </a>
     <a href="{{post.url | prepend: site.baseurl}}">
       <div class="chapter_inner">
         <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
-        <h3 class="chapter_title">{{post.title}}</h3>
+        <h3 class="Xu Weichi -- 个人网页">{{post.title}}</h3>
       </div>
     </a>
   </div>
