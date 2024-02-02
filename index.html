@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
+---
+layout: main
+---
 
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://img.zshfoj.com/a0824e0e6af8292021e60f1d1e924904d4efbc1ede6cf5b671de0d6d7278f9a8.png">
-  <link rel="icon" href="https://img.zshfoj.com/a0824e0e6af8292021e60f1d1e924904d4efbc1ede6cf5b671de0d6d7278f9a8.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  
-  <title>Xu Weichi 的个人空间</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-</head>
-</html>
+{% for post in paginator.posts %}
+  <div class="chapter">
+    <a href="{{post.url | prepend: site.baseurl}}">
+      {% if post.img %}
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+      {% endif %}
+    </a>
+    <a href="{{post.url | prepend: site.baseurl}}">
+      <div class="chapter_inner">
+        <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
+        <h3 class="chapter_title">{{post.title}}</h3>
+      </div>
+    </a>
+  </div>
+{% endfor %}
