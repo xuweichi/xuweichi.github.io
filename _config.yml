@@ -1,0 +1,53 @@
+logo: Xu Weichi
+title: Xu Weichi 的个人空间
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "xuweichi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Banner settings
+video: mountains.mp4 # add banner video. Add your video file to the folder video
+banner-title: # add banner title
+banner-desc: # add banner description
+
+# Author settings
+author-pic: face.jpg # your photo
+author-name: 徐未迟 # your name
+about-author: 一名来自中国的 OIer.# about author
+email: xuweichi@outlook.com # your email
+phone: +86 18989436842 # your pnone number
+website: https://xuweichi.github.io # you website
+
+# Social link
+bilibili_url: https://space.bilibili.com/1735577421  # add url link
+luogu_url: https://www.luogu.com.cn/user/838482 # add url link
+github_url: https://github.com/xuweichi # add url link
+
+# Disqus
+discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+
+# Newsletter
+mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Tracker
+analytics:
+
+# Paginate
+paginate: 12
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
