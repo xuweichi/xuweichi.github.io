@@ -1,65 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>一名 OIer 的小世界 | xuweichi</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#d25469">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#d25469">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#d25469">
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<!-- Styles -->
-	<link rel="stylesheet" href="/assets/css/main.css">
-</head>
+<title>页面标题</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
 <body>
 
-    
-<header class="main_header">
-  <a href="" class="logo">Xu<span>Weichi</span></a>
-  <nav class="main_menu">
-    <a href="/_pages/about">About</a>
-    <a href="/_pages/contact">Contact</a>
-  </nav>
-</header> <!-- End Section Header -->
+<div class="header">
+  <h1>菜鸟教程网页测试实例</h1>
+  <p>创建一个页面。</p>
+</div>
 
-  
-<section id="banner" data-vide-bg="/bef/assets/video/mountains.mp4" data-vide-options="posterType: jpg, loop: true, muted: false, position: 50% 50%">
-  <div class="wrapper">
-    <div class="content">
-      <h1 class="title">Enjoy Freedom</h1>
-      <h2 class="sub_title">"A journey of a thousand miles begins with a single step". — Lao Tzu</h2>
-    </div>
+<div class="navbar">
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#" class="right">链接</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>关于我</h2>
+      <h5>我的照片:</h5>
+      <div class="fakeimg" style="height:200px;">这边插入图像</div>
+      <p>关于我的介绍..</p>
+      <h3>更多内容</h3>
+      <p>我的更多内容</p>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
+      <div class="fakeimg" style="height:60px;">这边插入图像</div>
   </div>
-</section> <!-- End Section Banner -->
+  <div class="main">
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+      <br>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+  </div>
+</div>
 
-  
-<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
-  
-<script src="/bef/assets/js/jquery-3.2.1.min.js"></script>
-<script src="/bef/assets/js/jquery.vide.min.js"></script>
-<script src="/bef/assets/js/custom.js"></script>
-<!-- End Javascript -->
+<div class="footer">
+  <h2>底部内容</h2>
+</div>
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script> <!-- End Analytics -->
 </body>
 </html>
