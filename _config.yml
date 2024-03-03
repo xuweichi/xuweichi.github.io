@@ -1,12 +1,12 @@
-logo: # add logo name
-title: Bef - Enjoy Freedom
+logo:  Xuweichi
+title: 一名 OIer 的小世界
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 permalink: ':title/'
 baseurl: "/bef" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://xuweichi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
@@ -16,7 +16,7 @@ banner-desc: # add banner description
 # Author settings
 author-pic: xuweichi.jpg # your photo
 author-name: 徐未迟 # your name
-about-author: 一名很蒻的OIer... # about author
+about-author: 一名很蒻的 OIer... # about author
 email: xuweichi@outlook.com # your email
 phone: +86 19944003979 # your pnone number
 website: https://github.com/xuweichi # you website
