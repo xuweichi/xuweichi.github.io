@@ -5,31 +5,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
+* 
+{
     box-sizing: border-box;
 }
 
 /* body 样式 */
-body {
+body 
+{
     font-family: Arial;
     margin: 0;
 }
 
 /* 标题 */
-.header {
+.header 
+{
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
+    background-image: url("/assets/img/new-zealand.jpg");;
     color: white;
 }
 
 /* 标题字体加大 */
-.header h1 {
+.header h1 
+{
     font-size: 40px;
 }
 
 
-.navbar {
+.navbar 
+{
   overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -37,7 +42,8 @@ body {
   width: 100%;
 }
 
-.navbar a {
+.navbar a 
+{
   float: left;
   display: block;
   color: #f2f2f2;
@@ -47,24 +53,28 @@ body {
   font-size: 17px;
 }
 
-.navbar a:hover {
+.navbar a:hover 
+{
   background: #ddd;
   color: black;
 }
 
 /* 右侧链接*/
-.navbar a.right {
+.navbar a.right 
+{
     float: right;
 }
 
 /* 鼠标移动到链接的颜色 */
-.navbar a:hover {
+.navbar a:hover 
+{
     background-color: #ddd;
     color: black;
 }
 
 /* 列容器 */
-.row {  
+.row 
+{  
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -73,7 +83,8 @@ body {
 
 /* 创建两个列 */
 /* 边栏 */
-.side {
+.side 
+{
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: #f1f1f1;
@@ -81,7 +92,8 @@ body {
 }
 
 /* 主要的内容区域 */
-.main {   
+.main 
+{   
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
     background-color: white;
@@ -89,29 +101,35 @@ body {
 }
 
 /* 测试图片 */
-.fakeimg {
+.fakeimg 
+{
     background-color: #aaa;
     width: 100%;
     padding: 20px;
 }
 
 /* 底部 */
-.footer {
+.footer 
+{
     padding: 20px;
     text-align: center;
     background: #ddd;
 }
 
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
-@media screen and (max-width: 700px) {
-    .row {   
+@media screen and (max-width: 700px) 
+{
+    .row 
+    {   
         flex-direction: column;
     }
 }
 
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
-@media screen and (max-width: 400px) {
-    .navbar a {
+@media screen and (max-width: 400px) 
+{
+    .navbar a 
+    {
         float: none;
         width: 100%;
     }
@@ -120,36 +138,36 @@ body {
 </head>
 <body>
 
-<div class="header">
+<div class = "header">
   <h1> xuweichi 的首页</h1>
   <p>欢迎来到 xuweichi （一名很蒻的 OIer）的首页。</p>
 </div>
 
-<div class="navbar">
-  <a href="/_pages/blog">博客</a>
-  <a href="/_pages/notes">留言板</a>
-  <a href="/_pages/suntries">杂物间</a>
-  <a href="/_pages/supremum">Supremum Orangnization</a>
+<div class = "navbar">
+  <a href = "/_pages/blog">博客</a>
+  <a href = "/_pages/notes">留言板</a>
+  <a href = "/_pages/suntries">杂物间</a>
+  <a href = "/_pages/supremum" class = "right">Supremum Orangnization</a>
 </div>
 
-<div class="row">
-  <div class="side">
+<div class = "row">
+  <div class = "side">
       <h2>关于我</h2>
       <h5>一只野生 OIer</h5>
-      <img src="https://cdn.luogu.com.cn/upload/usericon/838482.png" alt="我的头像" width="250" height="250">
+      <img src = "https://cdn.luogu.com.cn/upload/usericon/838482.png" alt = "我的头像" width = "250" height = "250">
       <p>我是一名信息学竞赛初中生，你可以叫我 switch，这是我最受欢迎的外号🙂🙂🙂。</p>
       <h3>更多内容</h3>
       <p>洛谷账号：<a href = "https://www.luogu.com.cn/user/838482">xuweichi</a></p>
       <p>B站账号：<a href = "https://space.bilibili.com/1735577421">oier_switch</a></p>
       <p>github账号：<a href = "https://github.com/xuweichi">xuweichi</a></p>
   </div>
-  <div class="main">
+  <div class = "main">
       <h2>对于不屈不挠的人来说，没有失败这回事。——俾斯麦</h2>
   </div>
 </div>
 
-<div class="footer">
-  <h5><a href="https://xuweichi.github.io">xuweichi.github.io</a></h5>
+<div class = "footer">
+  <h5><a href = "https://xuweichi.github.io">xuweichi.github.io</a></h5>
 </div>
 
 </body>
