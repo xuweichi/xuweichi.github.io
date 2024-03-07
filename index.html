@@ -29,40 +29,28 @@ body {
 }
 
 
-#navbar a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
+  font-size: 17px;
 }
 
-#navbar a:hover {
-  left: 0;
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
-
-#blog {
-  top: 20px;
-  background-color: #4CAF50;
-}
-
-#notes {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#suntries {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#supremum {
-  top: 200px;
-  background-color: #555
 
 /* 右侧链接*/
 .navbar a.right {
@@ -142,6 +130,12 @@ body {
   <a href="/_pages/notes" id="blog">留言板</a>
   <a href="/_pages/suntries" id="projects">杂物间</a>
   <a href="/_pages/supremum" id="contact">上确界</a>
+</div>
+<div class="navbar">
+  <a href="/_pages/blog">博客</a>
+  <a href="/_pages/notes">留言板</a>
+  <a href="/_pages/suntries">杂物间</a>
+  <a href="/_pages/supremum">Supremum Orangnization</a>
 </div>
 
 <div class="row">
