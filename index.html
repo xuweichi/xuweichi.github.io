@@ -28,21 +28,41 @@ body {
     font-size: 40px;
 }
 
-/* 导航 */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
+
+#navbar a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 
-/* 导航栏样式 */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+#navbar a:hover {
+  left: 0;
 }
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
 
 /* 右侧链接*/
 .navbar a.right {
@@ -117,11 +137,11 @@ body {
   <p>欢迎来到 xuweichi （一名很蒻的 OIer）的首页。</p>
 </div>
 
-<div class="navbar">
-  <a href = "/_pages/blog">博客</a>
-  <a href = "/_pages/notes">留言板</a>
-  <a href = "/_pages/suntries">杂物间</a>
-  <a href = "/_pages/supremum" class="right">Supremum Oranization</a>
+<div id="navbar" class="sidenav">
+  <a href="/_pages/blog" id="about">博客</a>
+  <a href="/_pages/notes" id="blog">留言板</a>
+  <a href="/_pages/suntries" id="projects">杂物间</a>
+  <a href="/_pages/supremum" id="contact">上确界</a>
 </div>
 
 <div class="row">
