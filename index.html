@@ -60,30 +60,43 @@ a
   border-radius: 50% 20% / 10% 40%;
 }
     
-.navbar 
-{
+#navbar {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: #333;
 }
 
-.navbar a 
-{
+#navbar a {
   float: left;
   display: block;
-  color: #000000;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.navbar a:hover 
-{
-  background: #ddd;
+#navbar a:hover {
+  background-color: #ddd;
   color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* 右侧链接*/
@@ -170,7 +183,8 @@ a
   <p>欢迎来到 xuweichi （一名很蒻的 OIer）的首页。</p>
 </div>
 
-<div class = "navbar">
+<div id = "navbar">
+  <a class = "active" href = "">首页</a>
   <a href = "/_pages/blog">博客</a>
   <a href = "/_pages/notes">留言板</a>
   <a href = "/_pages/suntries">杂物间</a>
@@ -194,7 +208,7 @@ a
 </div>
 
 <div class = "footer">
-  <h5><a href = "https://xuweichi.github.io">xuweichi.github.io</a></h5>
+  <h5><a href = "https://xuweichi.github.io">xuweichi.github.io</a> V3.4</h5>
 </div>
 
 </body>
